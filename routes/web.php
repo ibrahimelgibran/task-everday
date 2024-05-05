@@ -55,3 +55,6 @@ Route::controller(LoginRegisterController::class)->group(function() {
 
 // Ajax  Rak Buku
 Route::post('/rak_buku/ajax_store',[RakBukuController::class, 'ajax_store']);
+
+// crud
+Route::resource('posts', 'PostController');
